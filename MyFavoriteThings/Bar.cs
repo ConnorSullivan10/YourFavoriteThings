@@ -4,11 +4,10 @@ using System.Text;
 
 namespace MyFavoriteThings
 {
-    class Bar
+    class Bar : FavoriteThing
     {
         public int MilesFromHome { get; set; }
         public string FavoriteDrink { get; set; }
-        public string Name { get; set; }
         public bool IsSpeakeasy { get; set; }
 
         public Bar(string theUsual, string name)

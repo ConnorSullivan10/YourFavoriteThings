@@ -4,20 +4,19 @@ using System.Text;
 
 namespace MyFavoriteThings
 {
-    class Pet
+    class Pet : FavoriteThing
     {
         public bool IsApexPet => true;
         public string TypeOfAnimal { get; set; }
-        public string Name { get; set; }
         public int Age { get; set; }
         public string BattleCry { get; set; }
 
         public Pet(string name, string typeOfAnimal, int age)
-            {
+        {
             Name = name;
             TypeOfAnimal = typeOfAnimal;
             Age = age;
-            }
+        }
 
         public void Yell (string battleCry)
         {

@@ -48,6 +48,8 @@ namespace MyFavoriteThings
             pattersonHouse.ServeDranks();
             pattersonHouse.CallACab();
 
+            attaboy.DuhItsMyFavorite();
+
         }
     }
 }

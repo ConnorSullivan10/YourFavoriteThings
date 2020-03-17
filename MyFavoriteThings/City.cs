@@ -4,10 +4,9 @@ using System.Text;
 
 namespace MyFavoriteThings
 {
-    class City
+    class City : FavoriteThing
     {
         public string Coordinates { get; set; }
-        public string Name { get; set; }
         public bool IsCool => true;
 
         public City(string name)

@@ -4,17 +4,16 @@ using System.Text;
 
 namespace MyFavoriteThings
 {
-    class Guitar
+    class Guitar : FavoriteThing
     {
         public int NumberOfFrets { get; set; }
         public string Brand { get; set; }
-        public string ModelName { get; set; }
         public bool IsSolidBody { get; set; }
 
         public Guitar(string brand, string model)
             {
             Brand = brand;
-            ModelName = model;
+            Name = model;
             }
 
         public void Shred()
@@ -25,7 +24,7 @@ namespace MyFavoriteThings
 
         public void CheckOutMyAxe()
         {
-            Console.WriteLine($"Bruh, did you see my new {Brand} {ModelName}? It rips!");
+            Console.WriteLine($"Bruh, did you see my new {Brand} {Name}? It rips!");
         }
     }
 }
